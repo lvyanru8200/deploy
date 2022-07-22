@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
 - ./deploy.yaml
+- ./remarkdeploy.yaml
 
 images:
 - name: lyr8200/blog
