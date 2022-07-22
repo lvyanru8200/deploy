@@ -93,7 +93,7 @@ spec:
     - host: "remark.lyrzyh.com"
       http:
         paths:
-          - path: /
+          - path: /web
             pathType: Prefix
             backend:
               service:
