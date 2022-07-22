@@ -26,16 +26,14 @@ spec:
             - containerPort: 8080
           env:
             - name: REMARK_URL
-              value: "https://remark42.mysite.com/"
+              value: "https://remark.lyrzyh.com/"
             - name: "SITE"
-              value: "mysite.com"
+              value: "lyrzyh.com"
             - name: SECRET
               valueFrom:
                 secretKeyRef:
                   name: remark42
                   key: SECRET
-            - name: ADMIN_SHARED_ID
-              value: "google_b182b5daa0004104b348d9bde762b1880ed9d98d"
             - name: TIME_ZONE
               value: "Asia/Shanghai"
           volumeMounts:
@@ -101,3 +99,11 @@ spec:
             backend:
               serviceName: remark42-web
               servicePort: 8080
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: remark42
+  namespace: remark42
+stringData:
+  SECRET: zhuzai2015
