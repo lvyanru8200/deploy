@@ -8,4 +8,4 @@ resources:
 images:
 - name: lyr8200/blog
   newName: lyr8200/blog
-  newTag: "3495560"
+  newTag: ae96b5c
