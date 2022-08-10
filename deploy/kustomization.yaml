@@ -7,5 +7,5 @@ resources:
 
 images:
 - name: lyr8200/blog
-  newName: registry.cn-hangzhou.aliyuncs.com/jarhmj/hugo-demo
-  newTag: 8189a05
+  newName: lyr8200/blog
+  newTag: 601841a
